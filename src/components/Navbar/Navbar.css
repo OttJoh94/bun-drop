@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
+  height: 10vh;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+}
+
+.navbar-logo {
+  width: 100px;
+}
+
+.navbar-profiles {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.fa-icon {
+  height: 20px;
+}
+
+.sign-in-btn {
+  border: 4px solid #ffa07a;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: #ffa07a;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-links {
+    display: none;
+  }
+}

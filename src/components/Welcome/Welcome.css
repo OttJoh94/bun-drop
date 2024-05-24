@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+
+.welcome {
+  display: flex;
+  position: relative;
+  margin: 30px auto;
+  align-items: center;
+  height: min(52vw, 75vh);
+  width: 100%;
+}
+
+.welcome-text {
+  font-size: 4.5vw;
+  position: absolute;
+  top: 20%;
+  width: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform: rotate(15deg);
+  animation: fadeIn 2s;
+}
+
+.welcome-text h2,
+.welcome-text span {
+  font-family: Irish Grover;
+}
+
+.welcome-burger {
+  width: min(80%, 800px);
+  top: -20%;
+  position: absolute;
+  left: 40%;
+}
+
+@media screen and (max-width: 850px) {
+  .welcome {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+  }
+
+  .welcome-burger {
+    position: static;
+    width: 100vw;
+  }
+
+  .welcome-text {
+    position: static;
+    font-size: 10vw;
+    transform: rotate(0deg);
+    width: 100%;
+    text-align: center;
+  }
+}

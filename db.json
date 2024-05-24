@@ -1,0 +1,250 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Burgare",
+      "category": "burger",
+      "image": "./src/assets/food/burger-1.png"
+    },
+    {
+      "id": "2",
+      "name": "Sides",
+      "category": "sides",
+      "image": "./src/assets/food/sides-2.png"
+    },
+    {
+      "id": "3",
+      "name": "Dressing",
+      "category": "dressing",
+      "image": "./src/assets/food/dressing-3.png"
+    },
+    {
+      "id": "4",
+      "name": "Dricka",
+      "category": "drinks",
+      "image": "./src/assets/food/drink-2.png"
+    },
+    {
+      "id": "5",
+      "name": "Smooothie",
+      "category": "smoothie",
+      "image": "./src/assets/food/drink-5.png"
+    },
+    {
+      "id": "6",
+      "name": "Dessert",
+      "category": "dessert",
+      "image": "./src/assets/food/dessert-1.png"
+    }
+  ],
+  "food": [
+    {
+      "id": "1",
+      "name": "Big Mac",
+      "description": "Klassisk burgare från McDonald's",
+      "price": 89,
+      "category": "burger",
+      "image": "./src/assets/food/burger-1.png"
+    },
+    {
+      "id": "2",
+      "name": "Grand Deluxe",
+      "description": "Stor och saftig burgare",
+      "price": 104,
+      "category": "burger",
+      "image": "./src/assets/food/burger-2.png"
+    },
+    {
+      "id": "3",
+      "name": "Friscomål",
+      "description": "Burgare med friscosås",
+      "price": 94,
+      "category": "burger",
+      "image": "./src/assets/food/burger-3.png"
+    },
+    {
+      "id": "4",
+      "name": "Quater Pound",
+      "description": "Burgare med kvartpundskött",
+      "price": 89,
+      "category": "burger",
+      "image": "./src/assets/food/burger-4.png"
+    },
+    {
+      "id": "5",
+      "name": "Whopper",
+      "description": "Stor och köttig burgare",
+      "price": 86,
+      "category": "burger",
+      "image": "./src/assets/food/burger-5.png"
+    },
+    {
+      "id": "6",
+      "name": "Big Cheese",
+      "description": "Burgare med mycket ost",
+      "price": 79,
+      "category": "burger",
+      "image": "./src/assets/food/burger-6.png"
+    },
+    {
+      "id": "7",
+      "name": "Veggie No'Bun",
+      "description": "Vegetarisk burgare utan bröd",
+      "price": 82,
+      "category": "burger",
+      "image": "./src/assets/food/burger-7.png"
+    },
+    {
+      "id": "8",
+      "name": "Grand Delixe Supreme",
+      "description": "Lyxig och generöst beklädd burgare",
+      "price": 109,
+      "category": "burger",
+      "image": "./src/assets/food/burger-8.png"
+    },
+    {
+      "id": "9",
+      "name": "Fries",
+      "description": "Klassiska pommes frites",
+      "price": 15,
+      "category": "sides",
+      "image": "./src/assets/food/sides-1.png"
+    },
+    {
+      "id": "10",
+      "name": "Sötpotatis fries",
+      "description": "Pommes frites gjorda av sötpotatis",
+      "price": 25,
+      "category": "sides",
+      "image": "./src/assets/food/sides-2.png"
+    },
+    {
+      "id": "11",
+      "name": "Äpplen",
+      "description": "Färska äppelskivor",
+      "price": 15,
+      "category": "sides",
+      "image": "./src/assets/food/sides-3.png"
+    },
+    {
+      "id": "12",
+      "name": "Lökringar",
+      "description": "Krispiga lökringar",
+      "price": 20,
+      "category": "sides",
+      "image": "./src/assets/food/sides-4.png"
+    },
+    {
+      "id": "13",
+      "name": "Läsk",
+      "description": "Kall läskedryck",
+      "price": 15,
+      "category": "drinks",
+      "image": "./src/assets/food/drink-1.png"
+    },
+    {
+      "id": "14",
+      "name": "Öl",
+      "description": "Alkoholhaltig dryck",
+      "price": 45,
+      "category": "drinks",
+      "image": "./src/assets/food/drink-2.png"
+    },
+    {
+      "id": "15",
+      "name": "Mjölk",
+      "description": "Kall mjölk",
+      "price": 12,
+      "category": "drinks",
+      "image": "./src/assets/food/drink-3.png"
+    },
+    {
+      "id": "16",
+      "name": "Smoothie ananas",
+      "description": "Frisk smoothie med ananas",
+      "price": 45,
+      "category": "smoothie",
+      "image": "./src/assets/food/drink-4.png"
+    },
+    {
+      "id": "17",
+      "name": "Smoothie jordgubb",
+      "description": "Fruktig smoothie med jordgubb",
+      "price": 45,
+      "category": "smoothie",
+      "image": "./src/assets/food/drink-5.png"
+    },
+    {
+      "id": "18",
+      "name": "Smoothie lime",
+      "description": "Syrlig smoothie med lime",
+      "price": 45,
+      "category": "smoothie",
+      "image": "./src/assets/food/drink-6.png"
+    },
+    {
+      "id": "19",
+      "name": "Mayonaise dipp",
+      "description": "Krämig majonäsdipp",
+      "price": 12,
+      "category": "dressing",
+      "image": "./src/assets/food/dressing-1.png"
+    },
+    {
+      "id": "20",
+      "name": "Cheese dipp",
+      "description": "Ostig dipp",
+      "price": 12,
+      "category": "dressing",
+      "image": "./src/assets/food/dressing-2.png"
+    },
+    {
+      "id": "21",
+      "name": "BBQ dipp",
+      "description": "Rökig BBQ-dipp",
+      "price": 12,
+      "category": "dressing",
+      "image": "./src/assets/food/dressing-3.png"
+    },
+    {
+      "id": "22",
+      "name": "Kebabsås dipp",
+      "description": "Kryddig kebabsåsdipp",
+      "price": 12,
+      "category": "dressing",
+      "image": "./src/assets/food/dressing-4.png"
+    },
+    {
+      "id": "23",
+      "name": "Sundae",
+      "description": "Glass med toppings",
+      "price": 25,
+      "category": "dessert",
+      "image": "./src/assets/food/dessert-1.png"
+    },
+    {
+      "id": "24",
+      "name": "Mjukglass",
+      "description": "Krämig mjukglass",
+      "price": 20,
+      "category": "dessert",
+      "image": "./src/assets/food/dessert-2.png"
+    },
+    {
+      "id": "25",
+      "name": "Mjukglass liten",
+      "description": "Mindre portion mjukglass",
+      "price": 15,
+      "category": "dessert",
+      "image": "./src/assets/food/dessert-3.png"
+    },
+    {
+      "id": "26",
+      "name": "Mjölkchoklad",
+      "description": "Varm mjölkchoklad med grädde",
+      "price": 20,
+      "category": "dessert",
+      "image": "./src/assets/food/dessert-4.png"
+    }
+  ]
+}
