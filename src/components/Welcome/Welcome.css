@@ -33,6 +33,7 @@
   top: -20%;
   position: absolute;
   left: 40%;
+  z-index: -1;
 }
 
 @media screen and (max-width: 850px) {

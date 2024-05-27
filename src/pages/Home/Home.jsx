@@ -9,7 +9,6 @@ function Home() {
   const [category, setCategory] = useState("all");
   return (
     <>
-      <Navbar />
       <Welcome />
       <CategorySelector category={category} setCategory={setCategory} />
       <FoodDisplay category={category} />

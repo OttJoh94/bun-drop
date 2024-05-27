@@ -1,0 +1,79 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+  display: grid;
+}
+
+.modal-contents {
+  place-self: center;
+  width: max(23vw, 330px);
+  color: #8a8a8a;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 40px 0px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+}
+
+.login-title {
+  color: #383838;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-input {
+  padding: 10px 20px;
+  border: 2px solid #cdcdcd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.register-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-span {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.toggle-span {
+  color: #ffa07a;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-modal-btn {
+  background-color: #ffa07a;
+  border: none;
+  padding: 10px 30px;
+  color: #f8f8f8;
+  font-weight: 400;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.login-modal-btn:hover {
+  background-color: #ff885a;
+}
+
+.toggle-span:hover {
+  color: #ff885a;
+}
