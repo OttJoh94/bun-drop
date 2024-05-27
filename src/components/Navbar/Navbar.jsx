@@ -15,7 +15,7 @@ function Navbar() {
         <a href="#">Home</a>
         <a href="#">Meny</a>
         <a href="#">Om oss</a>
-        <a href="#">Kontakt</a>
+        <a href="#footer">Kontakt</a>
       </div>
       <div className="navbar-profiles">
         <Link>
