@@ -13,7 +13,7 @@ function Navbar({ setShowLoginModal }) {
       </Link>
       <div className="navbar-links">
         <Link to="/">Home</Link>
-        <a href="#">Meny</a>
+        <a href="#food-display">Meny</a>
         <a href="#">Om oss</a>
         <a href="#footer">Kontakt</a>
       </div>

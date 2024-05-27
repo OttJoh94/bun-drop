@@ -32,13 +32,17 @@
 }
 
 .sign-in-btn {
-  border: none;
-  padding: 5px 15px;
-  border-radius: 5px;
-  color: #f8f8f8;
   background-color: #ffa07a;
-  font-weight: 500;
-  cursor: pointer;
+  border: none;
+  padding: 8px 20px;
+  color: #f8f8f8;
+  font-weight: 400;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.sign-in-btn:hover {
+  background-color: #ff885a;
 }
 
 @media screen and (max-width: 800px) {
