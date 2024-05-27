@@ -12,19 +12,23 @@ function useLocalStorage() {
   }
 
   function addToLocalStorageCart(foodToAdd) {
+    //Hittar nuvarande listan
     const currentCart = getLocalStorage("cart") || [];
     let itemExists = false;
 
     const updatedCart = currentCart.map((c) => {
+      // Om den redan finns, addera 1
       if (c.id === foodToAdd.id) {
         c.quantity = c.quantity + 1;
         itemExists = true;
         return c;
       } else {
+        // Ingen match, returnera objektet som det är
         return c;
       }
     });
 
+    // Om den inte finns, lägg till i listan tillsammans med en quantity.
     if (!itemExists) {
       updatedCart.push({ ...foodToAdd, quantity: 1 });
     }
@@ -32,7 +36,31 @@ function useLocalStorage() {
     setLocalStorage("cart", updatedCart);
   }
 
-  return { addToLocalStorageCart };
+  function removeFromLocalStorage(foodToRemove) {
+    const currentCart = getLocalStorage("cart") || [];
+
+    const updatedCart = currentCart
+      .map((c) => {
+        if (c.id === foodToRemove.id) {
+          c.quantity = c.quantity - 1;
+          return c;
+        } else {
+          return c;
+        }
+      })
+      .filter((c) => c.quantity > 0); // Rensar bort de med quantity 0
+
+    setLocalStorage("cart", updatedCart);
+  }
+
+  function getQuantityToFood(food) {
+    const currentCart = getLocalStorage("cart") || [];
+
+    const item = currentCart.find((c) => c.id === food.id);
+    return item ? item.quantity : 0;
+  }
+
+  return { addToLocalStorageCart, removeFromLocalStorage, getQuantityToFood };
 }
 
 export default useLocalStorage;

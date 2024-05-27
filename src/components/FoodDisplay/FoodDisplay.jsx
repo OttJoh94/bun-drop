@@ -31,6 +31,10 @@ function FoodDisplay({ category }) {
     cartStorage.addToLocalStorageCart(foodToAdd);
   }
 
+  function handleRemoveFromCart(foodToRemove) {
+    cartStorage.removeFromLocalStorage(foodToRemove);
+  }
+
   return (
     <div className="food-display" id="food-display">
       <div className="food-display-list">
@@ -40,6 +44,7 @@ function FoodDisplay({ category }) {
             food={f}
             className="food-item"
             addToCart={handleAddToCart}
+            removeFromCart={handleRemoveFromCart}
           />
         ))}
       </div>
