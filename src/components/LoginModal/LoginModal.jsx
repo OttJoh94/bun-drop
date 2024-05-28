@@ -4,10 +4,11 @@ import useInput from "../../hooks/useInput";
 import useFetch from "../../hooks/useFetch";
 import useLocalStorage from "../../hooks/useLocalStorage";
 
-function LoginModal({ setShowLoginModal }) {
+function LoginModal({ setShowLoginModal, setIsSignedIn }) {
   const [registerOrLogin, setRegisterOrLogin] = useState("Login");
   const { data, loading, error } = useFetch("http://localhost:3010/users");
   const [allUsers, setAllUsers] = useState([]);
+  const [isNoUser, setIsNoUser] = useState(false);
   const userNameInput = useInput(3);
   const emailInput = useInput(3);
   const passwordInput = useInput(3);
@@ -16,6 +17,10 @@ function LoginModal({ setShowLoginModal }) {
   useEffect(() => {
     setAllUsers(data);
   }, [data]);
+
+  useEffect(() => {
+    setIsNoUser(false);
+  }, [registerOrLogin]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -28,8 +33,8 @@ function LoginModal({ setShowLoginModal }) {
       if (result.successfullLogin) {
         signInUser(result.userToSignIn);
       } else {
-        console.log("Login failed");
-        // TODO: Visa att det blev fel
+        // Visa error-meddelande
+        setIsNoUser(true);
       }
     } else {
       // Registrera användare
@@ -51,8 +56,10 @@ function LoginModal({ setShowLoginModal }) {
   }
 
   function signInUser(userToSignIn) {
-    // Sätt signedInUser i localStorage
+    // Sätt signedInUser i localStorage och App.jsx
     userStorage.setSignedInUser(userToSignIn);
+    setIsSignedIn(true);
+
     // Ta bort modal
     setShowLoginModal(false);
   }
@@ -101,7 +108,7 @@ function LoginModal({ setShowLoginModal }) {
           <form onSubmit={handleSubmit} className="login-inputs">
             <input
               type="text"
-              placeholder="Username"
+              placeholder="Användarnamn"
               value={userNameInput.inputValue}
               onChange={userNameInput.handleInput}
               required
@@ -123,7 +130,7 @@ function LoginModal({ setShowLoginModal }) {
             )}
             <input
               type="password"
-              placeholder="Password"
+              placeholder="Lösenord"
               value={passwordInput.inputValue}
               onChange={passwordInput.handleInput}
               required
@@ -141,6 +148,13 @@ function LoginModal({ setShowLoginModal }) {
                   </p>
                 </div>
               </>
+            )}
+            {isNoUser ? (
+              <>
+                <p className="error-message">Incorrect username or password</p>
+              </>
+            ) : (
+              <></>
             )}
             <button type="submit" className="login-modal-btn">
               {registerOrLogin === "Login" ? "Logga in" : "Registrera"}

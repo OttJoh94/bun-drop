@@ -77,3 +77,8 @@
 .toggle-span:hover {
   color: #ff885a;
 }
+
+.error-message {
+  color: red;
+  font-weight: 500;
+}

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBasketShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 
-function Navbar({ setShowLoginModal }) {
+function Navbar({ setShowLoginModal, isSignedIn, setIsSignedIn }) {
   return (
     <div className="navbar">
       <Link to="/">
@@ -24,9 +24,21 @@ function Navbar({ setShowLoginModal }) {
         <Link>
           <FontAwesomeIcon icon={faUser} className="fa-icon" />
         </Link>
-        <button className="sign-in-btn" onClick={() => setShowLoginModal(true)}>
-          Logga in
-        </button>
+
+        {isSignedIn ? (
+          <button className="sign-in-btn" onClick={() => setIsSignedIn(false)}>
+            Logga ut
+          </button>
+        ) : (
+          <>
+            <button
+              className="sign-in-btn"
+              onClick={() => setShowLoginModal(true)}
+            >
+              Logga in
+            </button>
+          </>
+        )}
       </div>
     </div>
   );

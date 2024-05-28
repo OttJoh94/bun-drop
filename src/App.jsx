@@ -7,18 +7,26 @@ import LoginModal from "./components/LoginModal/LoginModal";
 
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false);
 
   return (
     <>
       {showLoginModal ? (
         <>
-          <LoginModal setShowLoginModal={setShowLoginModal} />
+          <LoginModal
+            setShowLoginModal={setShowLoginModal}
+            setIsSignedIn={setIsSignedIn}
+          />
         </>
       ) : (
         <></>
       )}
       <div className="app">
-        <Navbar setShowLoginModal={setShowLoginModal} />
+        <Navbar
+          setShowLoginModal={setShowLoginModal}
+          isSignedIn={isSignedIn}
+          setIsSignedIn={setIsSignedIn}
+        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route />
