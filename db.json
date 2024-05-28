@@ -246,5 +246,19 @@
       "category": "dessert",
       "image": "./src/assets/food/dessert-4.png"
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "user",
+      "email": "user@email.com",
+      "password": "password"
+    },
+    {
+      "id": "12b6",
+      "username": "otto",
+      "email": "otto@otto.com",
+      "password": "otto"
+    }
   ]
 }

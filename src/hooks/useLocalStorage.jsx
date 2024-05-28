@@ -60,7 +60,21 @@ function useLocalStorage() {
     return item ? item.quantity : 0;
   }
 
-  return { addToLocalStorageCart, removeFromLocalStorage, getQuantityToFood };
+  function setSignedInUser(userToSignIn) {
+    setLocalStorage("user", userToSignIn);
+  }
+
+  function getSignedInUser() {
+    return getLocalStorage("user");
+  }
+
+  return {
+    addToLocalStorageCart,
+    removeFromLocalStorage,
+    getQuantityToFood,
+    setSignedInUser,
+    getSignedInUser,
+  };
 }
 
 export default useLocalStorage;
