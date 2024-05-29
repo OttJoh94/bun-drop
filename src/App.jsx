@@ -9,6 +9,7 @@ import Cart from "./pages/Cart/Cart";
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [isSignedIn, setIsSignedIn] = useState(false);
+  const [showWelcomeBubble, setShowWelcomeBubble] = useState(false);
 
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <LoginModal
             setShowLoginModal={setShowLoginModal}
             setIsSignedIn={setIsSignedIn}
+            setShowWelcomeBubble={setShowWelcomeBubble}
           />
         </>
       ) : (
@@ -27,6 +29,8 @@ function App() {
           setShowLoginModal={setShowLoginModal}
           isSignedIn={isSignedIn}
           setIsSignedIn={setIsSignedIn}
+          showWelcomeBubble={showWelcomeBubble}
+          setShowWelcomeBubble={setShowWelcomeBubble}
         />
         <Routes>
           <Route path="/" element={<Home />} />

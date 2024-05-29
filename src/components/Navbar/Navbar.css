@@ -1,4 +1,5 @@
 .navbar-background {
+  position: relative;
   width: 100vw;
   height: 100px;
   background-color: #f8f8f8;
@@ -7,6 +8,8 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  display: flex;
+  justify-content: end;
 }
 
 .navbar {
@@ -58,6 +61,41 @@
 
 .sign-in-btn:hover {
   background-color: #ff885a;
+}
+
+.welcome-bubble {
+  position: relative;
+  top: 90%;
+  right: 10%;
+  min-width: max(12vw, 150px);
+  width: auto;
+  height: max(10vh, 50px);
+  padding: 0 20px;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #383838;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  display: inline-block;
+  z-index: 10;
+  animation: fadeIn 0.5s;
+}
+
+.welcome-bubble p {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto 0px;
+}
+
+/* För att centrera det vertikalt */
+.welcome-bubble::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
 }
 
 @media screen and (max-width: 700px) {

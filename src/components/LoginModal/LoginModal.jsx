@@ -4,7 +4,11 @@ import useInput from "../../hooks/useInput";
 import useFetch from "../../hooks/useFetch";
 import useLocalStorage from "../../hooks/useLocalStorage";
 
-function LoginModal({ setShowLoginModal, setIsSignedIn }) {
+function LoginModal({
+  setShowLoginModal,
+  setIsSignedIn,
+  setShowWelcomeBubble,
+}) {
   const [registerOrLogin, setRegisterOrLogin] = useState("Login");
   const { data, loading, error } = useFetch("http://localhost:3010/users");
   const [allUsers, setAllUsers] = useState([]);
@@ -60,6 +64,8 @@ function LoginModal({ setShowLoginModal, setIsSignedIn }) {
     userStorage.setSignedInUser(userToSignIn);
     setIsSignedIn(true);
 
+    // Visa välkommen
+    setShowWelcomeBubble(true);
     // Ta bort modal
     setShowLoginModal(false);
   }

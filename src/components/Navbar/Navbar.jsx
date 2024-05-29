@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/icons/logo-color.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBasketShopping, faUser } from "@fortawesome/free-solid-svg-icons";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
-function Navbar({ setShowLoginModal, isSignedIn, setIsSignedIn }) {
+function Navbar({
+  setShowLoginModal,
+  isSignedIn,
+  setIsSignedIn,
+  showWelcomeBubble,
+  setShowWelcomeBubble,
+}) {
+  const [user, setUser] = useState({});
+  const userStorage = useLocalStorage();
+
+  useEffect(() => {
+    setUser(userStorage.getSignedInUser());
+    setTimeout(() => {
+      setShowWelcomeBubble(false);
+    }, 3000);
+  }, [showWelcomeBubble]);
+
   return (
     <div className="navbar-background">
       <div className="navbar">
@@ -44,6 +61,15 @@ function Navbar({ setShowLoginModal, isSignedIn, setIsSignedIn }) {
           )}
         </div>
       </div>
+      {showWelcomeBubble ? (
+        <>
+          <div className="welcome-bubble">
+            <p>Välkommen, {user.username}!</p>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
