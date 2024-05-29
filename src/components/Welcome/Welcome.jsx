@@ -4,7 +4,7 @@ import burger from "../../assets/food/burger-expload.png";
 
 function Welcome() {
   return (
-    <div className="welcome">
+    <div className="welcome" id="welcome">
       <div className="welcome-text">
         <h2>
           Drop it like its <span className="hot">HOT</span>

@@ -4,7 +4,7 @@ import useFetch from "../../hooks/useFetch";
 import FoodItem from "../FoodItem/FoodItem";
 import useLocalStorage from "../../hooks/useLocalStorage";
 
-function FoodDisplay({ category }) {
+function FoodDisplay({ category, cartIsEmpty, setCartIsEmpty, cart, setCart }) {
   const [allFoods, setAllFoods] = useState([]);
   const [foodList, setFoodList] = useState([]);
   const cartStorage = useLocalStorage();
@@ -29,11 +29,21 @@ function FoodDisplay({ category }) {
 
   function handleAddToCart(foodToAdd) {
     cartStorage.addToLocalStorageCart(foodToAdd);
+    setCart(cartStorage.getCart());
   }
 
   function handleRemoveFromCart(foodToRemove) {
     cartStorage.removeFromLocalStorage(foodToRemove);
+    setCart(cartStorage.getCart());
   }
+
+  useEffect(() => {
+    if (cart.length === 0) {
+      setCartIsEmpty(true);
+    } else {
+      setCartIsEmpty(false);
+    }
+  }, [cart]);
 
   return (
     <div className="food-display" id="food-display">

@@ -1,7 +1,7 @@
 .navbar-background {
   position: relative;
   width: 100vw;
-  height: 100px;
+  height: 110px;
   background-color: #f8f8f8;
   position: fixed;
   top: 0;
@@ -34,20 +34,17 @@
 
 .navbar-logo {
   width: 100px;
+  margin-top: 10px;
 }
 
 .navbar-profiles {
   display: flex;
-  gap: 15px;
+  gap: 30px;
   align-items: center;
 }
 
 .fa-icon {
   height: 20px;
-}
-
-.click {
-  cursor: pointer;
 }
 
 .sign-in-btn {
@@ -63,6 +60,20 @@
   background-color: #ff885a;
 }
 
+.cart-image {
+  display: flex;
+  position: relative;
+}
+
+.orange-dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #ff885a;
+  position: absolute;
+  left: 22px;
+}
+
 .welcome-bubble {
   position: relative;
   top: 90%;
@@ -74,7 +85,7 @@
   white-space: nowrap;
   text-align: center;
   vertical-align: middle;
-  border: 2px solid #383838;
+  border: 1px solid #ffa07a;
   border-radius: 20px;
   background-color: #f8f8f8;
   display: inline-block;
@@ -87,6 +98,8 @@
   display: inline-block;
   vertical-align: middle;
   margin: auto 0px;
+  font-weight: 600;
+  color: #ffa07a;
 }
 
 /* För att centrera det vertikalt */

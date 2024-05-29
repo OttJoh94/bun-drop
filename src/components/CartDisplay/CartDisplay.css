@@ -24,12 +24,12 @@
 }
 
 .title-row-text {
-  font-size: max(1.5vw, 14px);
+  font-size: max(1.2vw, 16px);
   font-weight: 500;
 }
 
 .cart-item-text {
-  font-size: max(1.2vw, 12px);
+  font-size: max(1vw, 14px);
   font-weight: 600;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .total-price-container {
-  font-size: max(1.2vw, 14px);
+  font-size: max(1vw, 14px);
   font-weight: 500;
   width: max(30%, 200px);
 }

@@ -3,13 +3,20 @@ import "./CartDisplay.css";
 import { Link } from "react-router-dom";
 import useLocalStorage from "../../hooks/useLocalStorage";
 
-function CartDisplay({ fullDisplay }) {
+function CartDisplay({ fullDisplay, setCartIsEmpty, cart, setCart }) {
   const cartStorage = useLocalStorage();
-  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     setCart(cartStorage.getCart());
   }, []);
+
+  useEffect(() => {
+    if (cart.length <= 0) {
+      setCartIsEmpty(true);
+    } else {
+      setCartIsEmpty(false);
+    }
+  }, [cart]);
 
   function addToCart(food) {
     cartStorage.addToLocalStorageCart(food);

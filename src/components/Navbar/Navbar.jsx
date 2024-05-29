@@ -12,6 +12,7 @@ function Navbar({
   setIsSignedIn,
   showWelcomeBubble,
   setShowWelcomeBubble,
+  cartIsEmpty,
 }) {
   const [user, setUser] = useState({});
   const userStorage = useLocalStorage();
@@ -36,12 +37,19 @@ function Navbar({
           <a href="#footer">Kontakt</a>
         </div>
         <div className="navbar-profiles">
-          <Link to="/cart" className="click">
+          <Link to="/cart" className="cart-image">
             <FontAwesomeIcon icon={faBasketShopping} className="fa-icon" />
+            {!cartIsEmpty ? (
+              <>
+                <div className="orange-dot"></div>
+              </>
+            ) : (
+              <></>
+            )}
           </Link>
-          <Link>
+          {/* <Link>
             <FontAwesomeIcon icon={faUser} className="fa-icon" />
-          </Link>
+          </Link> */}
           {isSignedIn ? (
             <button
               className="sign-in-btn"
