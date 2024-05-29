@@ -1,0 +1,5 @@
+.checkout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  margin-top: 40px;
+}

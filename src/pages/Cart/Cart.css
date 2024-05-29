@@ -1,0 +1,20 @@
+.cart-title {
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.go-to-checkout-btn {
+  color: #f8f8f8;
+  font-size: max(1.5vw, 16px);
+  font-weight: 500;
+  background-color: #ffa07a;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin-top: 30px;
+}
+
+.go-to-checkout-btn:hover {
+  background-color: #ff885a;
+}

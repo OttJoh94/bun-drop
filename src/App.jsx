@@ -5,6 +5,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import LoginModal from "./components/LoginModal/LoginModal";
 import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout/Checkout";
 
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -35,7 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
-          <Route />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
       <Footer />
