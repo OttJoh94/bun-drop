@@ -6,6 +6,7 @@
   margin: 30px auto;
   align-items: center;
   height: min(52vw, 75vh);
+  min-height: 680px;
   width: 100%;
 }
 
@@ -39,8 +40,12 @@
 @media screen and (max-width: 850px) {
   .welcome {
     flex-direction: column-reverse;
+    justify-content: start;
     align-items: center;
     height: auto;
+    min-height: 0;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .welcome-burger {

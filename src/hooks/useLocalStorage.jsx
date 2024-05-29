@@ -4,7 +4,7 @@ function useLocalStorage() {
   function getLocalStorage(key) {
     const item = localStorage.getItem(key);
     const parsedItem = JSON.parse(item);
-    return parsedItem;
+    return parsedItem || [];
   }
 
   function setLocalStorage(key, value) {
@@ -13,7 +13,7 @@ function useLocalStorage() {
 
   function addToLocalStorageCart(foodToAdd) {
     //Hittar nuvarande listan
-    const currentCart = getLocalStorage("cart") || [];
+    const currentCart = getCart();
     let itemExists = false;
 
     const updatedCart = currentCart.map((c) => {
@@ -37,7 +37,7 @@ function useLocalStorage() {
   }
 
   function removeFromLocalStorage(foodToRemove) {
-    const currentCart = getLocalStorage("cart") || [];
+    const currentCart = getCart();
 
     const updatedCart = currentCart
       .map((c) => {
@@ -53,11 +53,35 @@ function useLocalStorage() {
     setLocalStorage("cart", updatedCart);
   }
 
+  function deleteCompletelyFromLocalStorage(foodToRemove) {
+    const currentCart = getLocalStorage("cart");
+
+    const updatedCart = currentCart.filter((c) => c.id !== foodToRemove.id);
+
+    setLocalStorage("cart", updatedCart);
+  }
+
   function getQuantityToFood(food) {
     const currentCart = getLocalStorage("cart") || [];
 
     const item = currentCart.find((c) => c.id === food.id);
     return item ? item.quantity : 0;
+  }
+
+  function getCart() {
+    return getLocalStorage("cart");
+  }
+
+  function getTotalCartPrice() {
+    const cart = getCart();
+
+    let totalPrice = 0;
+
+    cart.forEach((c) => {
+      totalPrice += c.price * c.quantity;
+    });
+
+    return totalPrice;
   }
 
   function setSignedInUser(userToSignIn) {
@@ -74,6 +98,9 @@ function useLocalStorage() {
     getQuantityToFood,
     setSignedInUser,
     getSignedInUser,
+    getCart,
+    getTotalCartPrice,
+    deleteCompletelyFromLocalStorage,
   };
 }
 

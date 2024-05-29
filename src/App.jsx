@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import LoginModal from "./components/LoginModal/LoginModal";
+import Cart from "./pages/Cart/Cart";
 
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -29,7 +30,7 @@ function App() {
         />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route />
+          <Route path="/cart" element={<Cart />} />
           <Route />
         </Routes>
       </div>
