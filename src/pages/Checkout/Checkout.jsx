@@ -94,7 +94,6 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
               placeholder="Efternamn"
               value={lastName.inputValue}
               onChange={lastName.handleInput}
-              required
               className="billing-input"
             />
           </div>
@@ -103,7 +102,6 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
             placeholder="Adress"
             value={address.inputValue}
             onChange={address.handleInput}
-            required
             className="billing-input"
           />
 
@@ -113,7 +111,6 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
               placeholder="Postkod"
               value={zipCode.inputValue}
               onChange={zipCode.handleInput}
-              required
               className="billing-input"
             />
             <input
@@ -121,7 +118,6 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
               placeholder="Postort"
               value={city.inputValue}
               onChange={city.handleInput}
-              required
               className="billing-input"
             />
           </div>
@@ -130,7 +126,6 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
             placeholder="Email"
             value={email.inputValue}
             onChange={email.handleInput}
-            required
             className="billing-input"
           />
           <input
@@ -138,7 +133,6 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
             placeholder="Telefonnummer"
             value={phone.inputValue}
             onChange={phone.handleInput}
-            required
             className="billing-input"
           />
         </form>
