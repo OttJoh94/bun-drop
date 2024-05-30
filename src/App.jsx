@@ -7,6 +7,7 @@ import LoginModal from "./components/LoginModal/LoginModal";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
 import useLocalStorage from "./hooks/useLocalStorage";
+import Confirm from "./pages/Confirm/Confirm";
 
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -85,6 +86,7 @@ function App() {
               />
             }
           />
+          <Route path="/confirm/:orderId" element={<Confirm />} />
         </Routes>
       </div>
       <Footer />

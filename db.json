@@ -260,5 +260,607 @@
       "email": "otto@otto.com",
       "password": "otto"
     }
+  ],
+  "orders": [
+    {
+      "id": "0e32",
+      "billingInfo": {
+        "firstName": "test",
+        "lastName": "test",
+        "address": "test",
+        "zipCode": "test",
+        "city": "test",
+        "email": "test@test.com",
+        "phone": "test"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "c22f",
+      "billingInfo": {
+        "firstName": "test",
+        "lastName": "test",
+        "address": "test",
+        "zipCode": "test",
+        "city": "test",
+        "email": "test@test.test",
+        "phone": "test"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 2
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "bfb8",
+      "billingInfo": {
+        "firstName": "123",
+        "lastName": "123",
+        "address": "123",
+        "zipCode": "123",
+        "city": "123",
+        "email": "123@123.123",
+        "phone": "123"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "2228",
+      "billingInfo": {
+        "firstName": "123",
+        "lastName": "123",
+        "address": "123",
+        "zipCode": "123",
+        "city": "123",
+        "email": "123@123.123",
+        "phone": "123"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "93ac",
+      "billingInfo": {
+        "firstName": "1",
+        "lastName": "1",
+        "address": "1",
+        "zipCode": "1",
+        "city": "1",
+        "email": "1@1.1",
+        "phone": "1"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "b207",
+      "billingInfo": {
+        "firstName": "1",
+        "lastName": "1",
+        "address": "1",
+        "zipCode": "1",
+        "city": "1",
+        "email": "1@1.1",
+        "phone": "1"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "47c0",
+      "billingInfo": {
+        "firstName": "1",
+        "lastName": "1",
+        "address": "1",
+        "zipCode": "1",
+        "city": "1",
+        "email": "1@1.1",
+        "phone": "1"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "4f30",
+      "billingInfo": {
+        "firstName": "1",
+        "lastName": "1",
+        "address": "1",
+        "zipCode": "1",
+        "city": "1",
+        "email": "1@1.1",
+        "phone": "1"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "933c",
+      "billingInfo": {
+        "firstName": "1",
+        "lastName": "1",
+        "address": "1",
+        "zipCode": "1",
+        "city": "1",
+        "email": "1@1.1",
+        "phone": "1"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "3179",
+      "billingInfo": {
+        "firstName": "1",
+        "lastName": "1",
+        "address": "1",
+        "zipCode": "1",
+        "city": "1",
+        "email": "1@1.1",
+        "phone": "1"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "3f94",
+      "billingInfo": {
+        "firstName": "1",
+        "lastName": "1",
+        "address": "1",
+        "zipCode": "1",
+        "city": "1",
+        "email": "1@1.1",
+        "phone": "1"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "9d1f",
+      "billingInfo": {
+        "firstName": "2",
+        "lastName": "2",
+        "address": "2",
+        "zipCode": "2",
+        "city": "2",
+        "email": "2@2.2",
+        "phone": "2"
+      },
+      "order": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png",
+          "quantity": 3
+        },
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png",
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Mayonaise dipp",
+          "description": "Krämig majonäsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-1.png",
+          "quantity": 1
+        }
+      ]
+    }
   ]
 }

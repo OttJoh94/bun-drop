@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/icons/logo-color.png";
+import logoMobile from "../../assets/icons/logo-color-mobile.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBasketShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import useLocalStorage from "../../hooks/useLocalStorage";
+import useWindowSize from "../../hooks/useWindowSize";
+import usePathname from "../../hooks/usePathname";
 
 function Navbar({
   setShowLoginModal,
@@ -16,6 +19,8 @@ function Navbar({
 }) {
   const [user, setUser] = useState({});
   const userStorage = useLocalStorage();
+  const windowSize = useWindowSize();
+  const pathName = usePathname();
 
   useEffect(() => {
     setUser(userStorage.getSignedInUser());
@@ -28,10 +33,26 @@ function Navbar({
     <div className="navbar-background">
       <div className="navbar">
         <Link to="/">
-          <img src={logo} alt="" className="navbar-logo" />
+          {windowSize.size < 750 ? (
+            <>
+              <img src={logoMobile} alt="" className="navbar-logo" />
+            </>
+          ) : (
+            <>
+              <img src={logo} alt="" className="navbar-logo" />
+            </>
+          )}
         </Link>
         <div className="navbar-links">
-          <Link to="/">Home</Link>
+          {pathName.path === "/" ? (
+            <>
+              <a href="#welcome">Home</a>
+            </>
+          ) : (
+            <>
+              <Link to="/">Home</Link>
+            </>
+          )}
           <a href="#food-display">Meny</a>
           <a href="#">Om oss</a>
           <a href="#footer">Kontakt</a>

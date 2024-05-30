@@ -19,7 +19,7 @@ function useInput(minLength) {
     }
   }, [inputValue]);
 
-  return { inputValue, handleInput, errorMessage };
+  return { inputValue, handleInput, errorMessage, setInputValue };
 }
 
 export default useInput;

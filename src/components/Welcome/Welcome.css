@@ -8,6 +8,7 @@
   height: min(52vw, 75vh);
   min-height: 680px;
   width: 100%;
+  scroll-margin-top: 200px;
 }
 
 .welcome-text {

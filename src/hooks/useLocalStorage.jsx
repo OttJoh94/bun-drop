@@ -11,6 +11,10 @@ function useLocalStorage() {
     localStorage.setItem(key, JSON.stringify(value));
   }
 
+  function getCart() {
+    return getLocalStorage("cart");
+  }
+
   function addToLocalStorageCart(foodToAdd) {
     //Hittar nuvarande listan
     const currentCart = getCart();
@@ -68,10 +72,6 @@ function useLocalStorage() {
     return item ? item.quantity : 0;
   }
 
-  function getCart() {
-    return getLocalStorage("cart");
-  }
-
   function getTotalCartPrice() {
     const cart = getCart();
 
@@ -93,6 +93,7 @@ function useLocalStorage() {
   }
 
   return {
+    setLocalStorage,
     addToLocalStorageCart,
     removeFromLocalStorage,
     getQuantityToFood,
