@@ -8,6 +8,7 @@ function LoginModal({
   setShowLoginModal,
   setIsSignedIn,
   setShowWelcomeBubble,
+  setSignedInUser,
 }) {
   const [registerOrLogin, setRegisterOrLogin] = useState("Login");
   const { data, loading, error } = useFetch("http://localhost:3010/users");
@@ -63,6 +64,7 @@ function LoginModal({
     // Sätt signedInUser i localStorage och App.jsx
     userStorage.setSignedInUser(userToSignIn);
     setIsSignedIn(true);
+    setSignedInUser(userToSignIn);
 
     // Visa välkommen
     setShowWelcomeBubble(true);
@@ -91,6 +93,7 @@ function LoginModal({
       username: userNameInput.inputValue,
       email: emailInput.inputValue,
       password: passwordInput.inputValue,
+      favorites: [],
     };
 
     return newUser;

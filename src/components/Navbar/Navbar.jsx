@@ -29,6 +29,11 @@ function Navbar({
     }, 3000);
   }, [showWelcomeBubble]);
 
+  function handleSignOut() {
+    setIsSignedIn(false);
+    userStorage.setSignedInUser({});
+  }
+
   return (
     <div className="navbar-background">
       <div className="navbar">
@@ -72,10 +77,7 @@ function Navbar({
             <FontAwesomeIcon icon={faUser} className="fa-icon" />
           </Link> */}
           {isSignedIn ? (
-            <button
-              className="sign-in-btn"
-              onClick={() => setIsSignedIn(false)}
-            >
+            <button className="sign-in-btn" onClick={handleSignOut}>
               Logga ut
             </button>
           ) : (

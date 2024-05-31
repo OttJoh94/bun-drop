@@ -20,6 +20,16 @@
   position: relative;
 }
 
+.star-div {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.star-icon {
+  color: gold;
+}
+
 .food-item-img-container .add {
   width: 45px;
   position: absolute;

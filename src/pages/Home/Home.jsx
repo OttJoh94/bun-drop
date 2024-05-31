@@ -4,7 +4,15 @@ import Welcome from "../../components/Welcome/Welcome";
 import CategorySelector from "../../components/CategorySelector/CategorySelector";
 import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 
-function Home({ cartIsEmpty, setCartIsEmpty, cart, setCart }) {
+function Home({
+  cartIsEmpty,
+  setCartIsEmpty,
+  cart,
+  setCart,
+  isSignedIn,
+  signedInUser,
+  setSignedInUser,
+}) {
   const [category, setCategory] = useState("all");
   return (
     <>
@@ -16,6 +24,9 @@ function Home({ cartIsEmpty, setCartIsEmpty, cart, setCart }) {
         setCartIsEmpty={setCartIsEmpty}
         cart={cart}
         setCart={setCart}
+        isSignedIn={isSignedIn}
+        signedInUser={signedInUser}
+        setSignedInUser={setSignedInUser}
       />
     </>
   );
