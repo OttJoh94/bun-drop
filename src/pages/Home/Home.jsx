@@ -3,6 +3,7 @@ import "./Home.css";
 import Welcome from "../../components/Welcome/Welcome";
 import CategorySelector from "../../components/CategorySelector/CategorySelector";
 import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
+import FavoritesList from "../../components/FavoritesList/FavoritesList";
 
 function Home({
   cartIsEmpty,
@@ -17,6 +18,14 @@ function Home({
   return (
     <>
       <Welcome />
+      {isSignedIn && (
+        <FavoritesList
+          cart={cart}
+          setCart={setCart}
+          isSignedIn={isSignedIn}
+          signedInUser={signedInUser}
+        />
+      )}
       <CategorySelector category={category} setCategory={setCategory} />
       <FoodDisplay
         category={category}

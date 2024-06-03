@@ -39,12 +39,14 @@ function FoodDisplay({
   }, [signedInUser]);
 
   useEffect(() => {
-    if (signedInUser && signedInUser.favorites) {
-      setFavoriteList(signedInUser.favorites);
-    } else {
+    setFavoriteList(signedInUser.favorites);
+  }, [signedInUser]);
+
+  useEffect(() => {
+    if (!isSignedIn) {
       setFavoriteList([]);
     }
-  }, [signedInUser]);
+  }, []);
 
   useEffect(() => {
     if (data) {
@@ -84,8 +86,14 @@ function FoodDisplay({
     <div className="food-display" id="food-display">
       <div className="food-display-list">
         {foodList.map((f) => {
-          const userFavorite =
-            isSignedIn && favoriteList.some((u) => u.id === f.id);
+          let userFavorite = false;
+
+          if (isSignedIn && favoriteList && Array.isArray(favoriteList)) {
+            if (favoriteList.some((u) => u.id === f.id)) {
+              // Kollar om den är med i användarens favoriter
+              userFavorite = true;
+            }
+          }
 
           return (
             <FoodItem

@@ -253,48 +253,7 @@
       "username": "user",
       "email": "user@email.com",
       "password": "password",
-      "favorites": [
-        {
-          "id": "1",
-          "name": "Big Mac",
-          "description": "Klassisk burgare från McDonald's",
-          "price": 89,
-          "category": "burger",
-          "image": "./src/assets/food/burger-1.png"
-        },
-        {
-          "id": "2",
-          "name": "Grand Deluxe",
-          "description": "Stor och saftig burgare",
-          "price": 104,
-          "category": "burger",
-          "image": "./src/assets/food/burger-2.png"
-        },
-        {
-          "id": "1",
-          "name": "Big Mac",
-          "description": "Klassisk burgare från McDonald's",
-          "price": 89,
-          "category": "burger",
-          "image": "./src/assets/food/burger-1.png"
-        },
-        {
-          "id": "2",
-          "name": "Grand Deluxe",
-          "description": "Stor och saftig burgare",
-          "price": 104,
-          "category": "burger",
-          "image": "./src/assets/food/burger-2.png"
-        },
-        {
-          "id": "5",
-          "name": "Whopper",
-          "description": "Stor och köttig burgare",
-          "price": 86,
-          "category": "burger",
-          "image": "./src/assets/food/burger-5.png"
-        }
-      ]
+      "favorites": []
     },
     {
       "id": "12b6",
@@ -302,22 +261,6 @@
       "email": "otto@otto.com",
       "password": "otto",
       "favorites": [
-        {
-          "id": "16",
-          "name": "Smoothie ananas",
-          "description": "Frisk smoothie med ananas",
-          "price": 45,
-          "category": "smoothie",
-          "image": "./src/assets/food/drink-4.png"
-        },
-        {
-          "id": "5",
-          "name": "Whopper",
-          "description": "Stor och köttig burgare",
-          "price": 86,
-          "category": "burger",
-          "image": "./src/assets/food/burger-5.png"
-        },
         {
           "id": "10",
           "name": "Sötpotatis fries",
@@ -327,12 +270,12 @@
           "image": "./src/assets/food/sides-2.png"
         },
         {
-          "id": "1",
-          "name": "Big Mac",
-          "description": "Klassisk burgare från McDonald's",
-          "price": 89,
-          "category": "burger",
-          "image": "./src/assets/food/burger-1.png"
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png"
         }
       ]
     },
@@ -466,6 +409,38 @@
           "category": "burger",
           "image": "./src/assets/food/burger-2.png",
           "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "1261",
+      "billingInfo": {
+        "firstName": "oii",
+        "lastName": "",
+        "address": "",
+        "zipCode": "",
+        "city": "",
+        "email": "",
+        "phone": ""
+      },
+      "order": [
+        {
+          "id": "9",
+          "name": "Fries",
+          "description": "Klassiska pommes frites",
+          "price": 15,
+          "category": "sides",
+          "image": "./src/assets/food/sides-1.png",
+          "quantity": 1
+        },
+        {
+          "id": "13",
+          "name": "Läsk",
+          "description": "Kall läskedryck",
+          "price": 15,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-1.png",
+          "quantity": 1
         }
       ]
     }
