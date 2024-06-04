@@ -4,13 +4,30 @@ import logo from "../../assets/icons/logo-color.png";
 import facebook from "../../assets/icons/facebook_icon.png";
 import linkedin from "../../assets/icons/linkedin_icon.png";
 import twitter from "../../assets/icons/twitter_icon.png";
+import { Link } from "react-router-dom";
+import usePathname from "../../hooks/usePathname";
 
 function Footer() {
+  const pathName = usePathname();
+
   return (
     <div className="footer" id="footer">
       <div className="footer-contents">
         <div className="footer-left">
-          <img src={logo} alt="" className="footer-logo" />
+          {pathName === "/" ? (
+            <>
+              <a href="#welcome">
+                <img src={logo} alt="" className="footer-logo" />
+              </a>
+            </>
+          ) : (
+            <>
+              <Link to="/">
+                <img src={logo} alt="" className="footer-logo" />
+              </Link>
+            </>
+          )}
+
           <div className="footer-social-icons">
             <img src={facebook} alt="" className="social-icon" />
             <img src={linkedin} alt="" className="social-icon" />

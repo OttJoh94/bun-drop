@@ -443,6 +443,52 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "id": "a48d",
+      "billingInfo": {
+        "firstName": "sdad",
+        "lastName": "",
+        "address": "",
+        "zipCode": "",
+        "city": "",
+        "email": "",
+        "phone": ""
+      },
+      "order": [
+        {
+          "id": "26",
+          "name": "Mjölkchoklad",
+          "description": "Varm mjölkchoklad med grädde",
+          "price": 20,
+          "category": "dessert",
+          "image": "./src/assets/food/dessert-4.png",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "99a3",
+      "billingInfo": {
+        "firstName": "o",
+        "lastName": "",
+        "address": "",
+        "zipCode": "",
+        "city": "",
+        "email": "",
+        "phone": ""
+      },
+      "order": [
+        {
+          "id": "3",
+          "name": "Friscomål",
+          "description": "Burgare med friscosås",
+          "price": 94,
+          "category": "burger",
+          "image": "./src/assets/food/burger-3.png",
+          "quantity": 3
+        }
+      ]
     }
   ]
 }

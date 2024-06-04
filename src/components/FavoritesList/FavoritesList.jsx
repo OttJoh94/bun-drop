@@ -23,7 +23,7 @@ function FavoritesList({
   }
 
   return (
-    <div className="favorites-wrapper">
+    <div className="favorites-wrapper" id="favorites">
       <hr className="favorites-hr" />
       <h1 className="favorites-title">Dina favoriter</h1>
 

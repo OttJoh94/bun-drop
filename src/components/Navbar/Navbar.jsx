@@ -58,21 +58,24 @@ function Navbar({
               <Link to="/">Home</Link>
             </>
           )}
+          {isSignedIn && <a href="#favorites">Favoriter</a>}
           <a href="#food-display">Meny</a>
-          <a href="#">Om oss</a>
           <a href="#footer">Kontakt</a>
         </div>
         <div className="navbar-profiles">
-          <Link to="/cart" className="cart-image">
-            <FontAwesomeIcon icon={faBasketShopping} className="fa-icon" />
-            {!cartIsEmpty ? (
-              <>
-                <div className="orange-dot"></div>
-              </>
-            ) : (
-              <></>
-            )}
-          </Link>
+          <div className="cart-div">
+            <Link to="/cart" className="cart-image">
+              <FontAwesomeIcon icon={faBasketShopping} className="fa-icon" />
+              {!cartIsEmpty ? (
+                <>
+                  <div className="orange-dot"></div>
+                </>
+              ) : (
+                <></>
+              )}
+            </Link>
+          </div>
+
           {/* <Link>
             <FontAwesomeIcon icon={faUser} className="fa-icon" />
           </Link> */}

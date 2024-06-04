@@ -47,6 +47,14 @@
   height: 20px;
 }
 
+.cart-div {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sign-in-btn {
   background-color: #ffa07a;
   border: none;
@@ -114,5 +122,9 @@
 @media screen and (max-width: 700px) {
   .navbar-links {
     display: none;
+  }
+
+  .navbar-profiles {
+    gap: 15px;
   }
 }
