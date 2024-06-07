@@ -94,6 +94,7 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
               placeholder="Efternamn"
               value={lastName.inputValue}
               onChange={lastName.handleInput}
+              required
               className="billing-input"
             />
           </div>
@@ -102,6 +103,7 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
             placeholder="Adress"
             value={address.inputValue}
             onChange={address.handleInput}
+            required
             className="billing-input"
           />
 
@@ -111,6 +113,9 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
               placeholder="Postkod"
               value={zipCode.inputValue}
               onChange={zipCode.handleInput}
+              required
+              pattern="\d{5}"
+              title="Ange 5 siffror."
               className="billing-input"
             />
             <input
@@ -118,6 +123,7 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
               placeholder="Postort"
               value={city.inputValue}
               onChange={city.handleInput}
+              required
               className="billing-input"
             />
           </div>
@@ -126,6 +132,7 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
             placeholder="Email"
             value={email.inputValue}
             onChange={email.handleInput}
+            required
             className="billing-input"
           />
           <input
@@ -133,6 +140,7 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
             placeholder="Telefonnummer"
             value={phone.inputValue}
             onChange={phone.handleInput}
+            required
             className="billing-input"
           />
         </form>
@@ -171,30 +179,36 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
                 />
                 <input
                   type="text"
-                  placeholder="Datum"
+                  placeholder="Datum MM/YY"
                   value={date.inputValue}
                   onChange={date.handleInput}
                   required
+                  pattern="^(0[1-9]|1[0-2])\/?([0-9]{2})$"
+                  title="Ange MM/YY."
                   className="billing-input"
                   form="checkoutForm"
                 />
               </div>
               <div className="card-second-row">
                 <input
-                  type="number"
+                  type="text"
                   placeholder="Kortnummer"
                   value={cardNumber.inputValue}
                   onChange={cardNumber.handleInput}
                   required
+                  pattern="\d{16}"
+                  title="Ange 16 siffror."
                   className="billing-input"
                   form="checkoutForm"
                 />
                 <input
-                  type="number"
+                  type="text"
                   placeholder="CVC"
                   value={cvc.inputValue}
                   onChange={cvc.handleInput}
                   required
+                  pattern="\d{3}"
+                  title="Ange 3 siffror."
                   className="billing-input"
                   form="checkoutForm"
                 />

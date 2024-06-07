@@ -253,7 +253,32 @@
       "username": "user",
       "email": "user@email.com",
       "password": "password",
-      "favorites": []
+      "favorites": [
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png"
+        },
+        {
+          "id": "10",
+          "name": "Sötpotatis fries",
+          "description": "Pommes frites gjorda av sötpotatis",
+          "price": 25,
+          "category": "sides",
+          "image": "./src/assets/food/sides-2.png"
+        },
+        {
+          "id": "14",
+          "name": "Öl",
+          "description": "Alkoholhaltig dryck",
+          "price": 45,
+          "category": "drinks",
+          "image": "./src/assets/food/drink-2.png"
+        }
+      ]
     },
     {
       "id": "12b6",
@@ -278,217 +303,7 @@
           "image": "./src/assets/food/drink-2.png"
         }
       ]
-    },
-    {
-      "id": "7d09",
-      "username": "test",
-      "email": "test@test.com",
-      "password": "test",
-      "favorites": []
     }
   ],
-  "orders": [
-    {
-      "id": "dd4a",
-      "billingInfo": {
-        "firstName": "123",
-        "lastName": "",
-        "address": "",
-        "zipCode": "",
-        "city": "",
-        "email": "",
-        "phone": ""
-      },
-      "order": [
-        {
-          "id": "1",
-          "name": "Big Mac",
-          "description": "Klassisk burgare från McDonald's",
-          "price": 89,
-          "category": "burger",
-          "image": "./src/assets/food/burger-1.png",
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": "84cf",
-      "billingInfo": {
-        "firstName": "Otto",
-        "lastName": "",
-        "address": "",
-        "zipCode": "",
-        "city": "",
-        "email": "",
-        "phone": ""
-      },
-      "order": [
-        {
-          "id": "1",
-          "name": "Big Mac",
-          "description": "Klassisk burgare från McDonald's",
-          "price": 89,
-          "category": "burger",
-          "image": "./src/assets/food/burger-1.png",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "351f",
-      "billingInfo": {
-        "firstName": "hej",
-        "lastName": "",
-        "address": "",
-        "zipCode": "",
-        "city": "",
-        "email": "",
-        "phone": ""
-      },
-      "order": [
-        {
-          "id": "1",
-          "name": "Big Mac",
-          "description": "Klassisk burgare från McDonald's",
-          "price": 89,
-          "category": "burger",
-          "image": "./src/assets/food/burger-1.png",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "f2cf",
-      "billingInfo": {
-        "firstName": "dsad",
-        "lastName": "",
-        "address": "",
-        "zipCode": "",
-        "city": "",
-        "email": "",
-        "phone": ""
-      },
-      "order": [
-        {
-          "id": "1",
-          "name": "Big Mac",
-          "description": "Klassisk burgare från McDonald's",
-          "price": 89,
-          "category": "burger",
-          "image": "./src/assets/food/burger-1.png",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "4eff",
-      "billingInfo": {
-        "firstName": "dawd",
-        "lastName": "",
-        "address": "",
-        "zipCode": "",
-        "city": "",
-        "email": "",
-        "phone": ""
-      },
-      "order": [
-        {
-          "id": "1",
-          "name": "Big Mac",
-          "description": "Klassisk burgare från McDonald's",
-          "price": 89,
-          "category": "burger",
-          "image": "./src/assets/food/burger-1.png",
-          "quantity": 2
-        },
-        {
-          "id": "2",
-          "name": "Grand Deluxe",
-          "description": "Stor och saftig burgare",
-          "price": 104,
-          "category": "burger",
-          "image": "./src/assets/food/burger-2.png",
-          "quantity": 3
-        }
-      ]
-    },
-    {
-      "id": "1261",
-      "billingInfo": {
-        "firstName": "oii",
-        "lastName": "",
-        "address": "",
-        "zipCode": "",
-        "city": "",
-        "email": "",
-        "phone": ""
-      },
-      "order": [
-        {
-          "id": "9",
-          "name": "Fries",
-          "description": "Klassiska pommes frites",
-          "price": 15,
-          "category": "sides",
-          "image": "./src/assets/food/sides-1.png",
-          "quantity": 1
-        },
-        {
-          "id": "13",
-          "name": "Läsk",
-          "description": "Kall läskedryck",
-          "price": 15,
-          "category": "drinks",
-          "image": "./src/assets/food/drink-1.png",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "a48d",
-      "billingInfo": {
-        "firstName": "sdad",
-        "lastName": "",
-        "address": "",
-        "zipCode": "",
-        "city": "",
-        "email": "",
-        "phone": ""
-      },
-      "order": [
-        {
-          "id": "26",
-          "name": "Mjölkchoklad",
-          "description": "Varm mjölkchoklad med grädde",
-          "price": 20,
-          "category": "dessert",
-          "image": "./src/assets/food/dessert-4.png",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": "99a3",
-      "billingInfo": {
-        "firstName": "o",
-        "lastName": "",
-        "address": "",
-        "zipCode": "",
-        "city": "",
-        "email": "",
-        "phone": ""
-      },
-      "order": [
-        {
-          "id": "3",
-          "name": "Friscomål",
-          "description": "Burgare med friscosås",
-          "price": 94,
-          "category": "burger",
-          "image": "./src/assets/food/burger-3.png",
-          "quantity": 3
-        }
-      ]
-    }
-  ]
+  "orders": []
 }
