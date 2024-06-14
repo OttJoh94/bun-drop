@@ -255,14 +255,6 @@
       "password": "password",
       "favorites": [
         {
-          "id": "2",
-          "name": "Grand Deluxe",
-          "description": "Stor och saftig burgare",
-          "price": 104,
-          "category": "burger",
-          "image": "./src/assets/food/burger-2.png"
-        },
-        {
           "id": "10",
           "name": "Sötpotatis fries",
           "description": "Pommes frites gjorda av sötpotatis",
@@ -277,6 +269,22 @@
           "price": 45,
           "category": "drinks",
           "image": "./src/assets/food/drink-2.png"
+        },
+        {
+          "id": "22",
+          "name": "Kebabsås dipp",
+          "description": "Kryddig kebabsåsdipp",
+          "price": 12,
+          "category": "dressing",
+          "image": "./src/assets/food/dressing-4.png"
+        },
+        {
+          "id": "2",
+          "name": "Grand Deluxe",
+          "description": "Stor och saftig burgare",
+          "price": 104,
+          "category": "burger",
+          "image": "./src/assets/food/burger-2.png"
         }
       ]
     },
@@ -303,6 +311,13 @@
           "image": "./src/assets/food/drink-2.png"
         }
       ]
+    },
+    {
+      "id": "b86a",
+      "username": "Eva",
+      "email": "eva@eva.se",
+      "password": "eva",
+      "favorites": []
     }
   ],
   "orders": []

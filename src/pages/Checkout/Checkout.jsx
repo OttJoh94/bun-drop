@@ -7,6 +7,7 @@ import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import swish1 from "../../assets/icons/swish-1.svg";
 import swish2 from "../../assets/icons/swish-2.svg";
 import { useNavigate } from "react-router-dom";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
 function Checkout({ setCartIsEmpty, cart, setCart }) {
   const [paymentMethod, setPaymentMethod] = useState("");
@@ -23,6 +24,7 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
   const cardNumber = useInput(1);
   const cvc = useInput(1);
   const navigate = useNavigate();
+  const cartStorage = useLocalStorage();
 
   useEffect(() => {
     if (firstName.inputValue === "" && lastName.inputValue === "") {
@@ -66,9 +68,17 @@ function Checkout({ setCartIsEmpty, cart, setCart }) {
       body: JSON.stringify(newOrder),
     };
 
+    //För att skicka orderId till confirm page
     fetch("http://localhost:3010/orders", postOptions)
       .then((res) => res.json())
       .then((data) => setOrder(data));
+
+    resetCart();
+  }
+
+  function resetCart() {
+    setCart([]);
+    cartStorage.setLocalStorage("cart", []);
   }
 
   return (
